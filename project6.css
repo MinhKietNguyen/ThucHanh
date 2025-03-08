@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+}
+.contain, .div-contain{
+    display: flex;
+    height:80px;
+}
+.contain{
+    width: 100%;
+    background-color: rgba(30, 30, 30, 1);
+    transition: background-color 0.3s ease-in-out;
+}
+.navbarcar{
+    animation: carvaw 1s ease;
+    animation-fill-mode: forwards;
+}
+@keyframes carvaw{
+    from{
+        background-color: hsla(0, 0%, 75%, 0.5);
+    }
+    to{
+        background-color: hsl(0, 0%, 20%);
+    }
+}
+.div-contain{
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contain p:nth-child(2){
+    color: white;
+    font-size: 10px;
+    width: 10px;
+    margin-left: -30px;
+    margin-right: 90px;
+}
+.contain p:not(p:nth-of-type(1)), a p, a{
+    font-size: 20px!important;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+}
+.contain p:not(p:nth-of-type(1)):hover{
+    color: red;
+}
+.contain button{
+    font-size:17px;
+    color:white;
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 125px;
+    height: 35px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease-out;
+    line-height: 35px;
+    background-color: black;
+}
+.contain button:last-child{
+    background-color: rgb(255, 76, 76)!important;
+    width: 145px;
+    margin-left: -25px;
+    border: 1px solid black;
+}
+.contain button:hover{
+    transform: scale(1.04);
+}
+.contain button:nth-of-type(1):hover{
+    background-color: rgb(68, 94, 118);
+}
+.slider{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.slides img, video{
+    width: 100%;
+    height: auto;
+    display: none;
+    background-size: cover;
+    background-position: center;
+    background-attachment:local;
+    background-repeat: no-repeat;
+}
+.slider button{
+    position: absolute;
+    background-color: hsla(0,0%,0%,0.5);
+    color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 6px 12px;
+    top:50%;
+}
+img.slide, video.slide{
+    display: block;
+}
+.left{
+    left: 0;
+    margin-left: 5px;
+}
+.right{
+    right: 0;
+    margin-right: 5px;
+}
+@keyframes fade{
+    from{
+        opacity: .5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.divnw h3{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.divnw{
+    width: 1000px;
+    height: 420px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.borderBottom{
+    border-bottom: 1px solid white;
+}
+.div-vn{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.div-vn span{
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-blend-mode: screen;
+    background-clip: border-box;
+    transition: transform 0.5s cubic-bezier(.4, 0, .2, 1);
+    overflow: hidden;
+}
+.div-vn span:hover{
+    transform: scale(1.1);
+}
+.divcs{
+    width: 200px;
+    height: 400px;
+}
+.divcs h4{
+    color: white;
+    font-size: 15px;
+}
+.v1:nth-of-type(1) span{
+    background-image: url(/pictures/p3.jpg);
+}
+.v1:nth-of-type(2) span{
+    background-image: url(/pictures/thenun2.jpg);
+}
+.v1:nth-of-type(3) span{
+    background-image: url(/pictures/AOT.jpg);
+}
+.v2:nth-of-type(1) span{
+    background-image: url(/pictures/captain-america-brave-new-world-poster-2.jpeg);
+}
+.v2:nth-of-type(2) span{
+    background-image: url(/pictures/STFH.jpg);
+}
+.i1{
+    width: 50px;height: 50px;
+}
+.i2{
+    width: 120px; height: 50px;
+}
+#Dangky, #Dangnhap{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0,0%,0%,0.5);
+    display: none;
+    z-index: 100;
+    top: 0px;
+    position: fixed;
+}
+.dk, .dn{
+    display: block !important;
+}
+.form1{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap:30px
+}
+.form1 div, .User{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+.form1 input{
+    height: 40px;
+    border-radius: 10px;
+    width: 252px;
+}
+.User, .User_input{
+    font-size: 15px;
+    margin-left: 25px;
+}
+.User_input{
+    width: 541px;
+    border-radius: 10px;
+    height: 40px;
+}
+.closs-css{
+    color: gray;
+}
+.closs-css:hover, .closs-css:active{
+    color: white;
+}
+
+
+
+

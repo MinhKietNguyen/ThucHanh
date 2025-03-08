@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project6.css">
+    <link rel="icon"  href="/pictures/NCC_icon.png">
+</head>
+<body style="width: 100%">
+    <header style="background-color: rgba(30, 30, 30, 1);">
+        <nav id="narbar" class="contain" style="position: fixed;z-index: 90;">
+            <div class="div-contain" >
+                <img src="/pictures/NCC_icon.png" style="width: 100px;height: 130px;color: brown;">
+                <p>NATIONAL CINEMA CENTER</p>
+                <a href="project6.html"><p style="color: red">Trang chủ</p></a>
+                <p>Lịch chiếu</p>
+                <p>Tin tức</p>
+                <p>Khuyến mãi</p>
+                <p>Liên hoan phim, Tuần phim</p>
+                <p>Giới thiệu</p>
+                <button onclick="Dangky()">Đăng ký</button>
+                <button onclick="Dangnhap()">Đăng nhập</button>
+            </div>
+        </nav>
+        <br>
+        <div class="slider">
+            <div class="slides">
+                <a href="Wicked.html"><img class="slide" src="/pictures/p3.jpg"></a>
+                <a href="CA_BNW.html"><img class="slide" src="/pictures/captain-america-brave-new-world-poster-2.jpeg"></a>
+                <a href="SFH.html"><img class="slide" src="/pictures/STFH.jpg"></a>
+                <a href="THENUNII.html"><img class="slide" src="/pictures/thenun2.jpg"></a>
+                <a href="AOT.html"><video class="slide" autoplay muted>
+                    <source src="/videos/ATTACK ON TITAN_ THE LAST ATTACK – Trailer (HD).mp4">
+                </video></a>
+            </div>
+            <button class="left" onclick="prevSlide()">&#10094</button>
+            <button class="right" onclick="nextSlide()">&#10095</button>
+        </div>
+        <div class="divnw">
+            <h3>🔴 Phim đang chiếu</h3>
+            <div style="display: flex; gap:50px">
+                <div class="divcs v1">
+                    <a href="Wicked.html">
+                        <div class="div-vn">
+                            <span></span>
+                        </div>
+                        <h4>WICKED</h4>
+                    </a>
+                </div>
+                <div class="divcs v1">
+                    <a href="THENUNII.html">
+                        <div class="div-vn">
+                            <span></span>
+                        </div>
+                        <h4>THE NUN II</h4>
+                    </a>
+                </div>
+                <div class="divcs v1">
+                    <a href="AOT.html">
+                        <div class="div-vn">
+                            <span></span>
+                        </div>
+                        <h4>ATTACK ON TITAN</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="divnw">
+            <h3>🔴 Phim sắp chiếu</h3>
+            <div style="display: flex;gap:50px">
+                <div class="divcs v2">
+                    <a href="CA_BNW.html">
+                        <div class="div-vn">
+                            <span></span>
+                        </div>
+                        <h4>CAPTAIN AMERICA: BRAVE NEW WORLD</h4>
+                    </a>
+                </div>
+                <div class="divcs v2">
+                    <a href="SFH.html">
+                        <div class="div-vn">
+                            <span></span>
+                        </div>
+                        <h4>STRANGER FROM HELL</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer style="background-color: black;margin: 0;">
+        <div style="margin-left:-10px;display: flex;gap: 40px; align-items: center; color: white; font-size: 20px;text-align:center;justify-content: center;">
+            <p>Chính sách</p>
+            <p>Lịch chiếu</p>
+            <p>Tin tức</p>
+            <p>Giá vé</p>
+            <p>Hỏi đáp</p>
+            <p>Liên hệ</p>
+        </div>
+        <div style="display: flex;gap:20px;justify-content: center;">
+            <img src="/pictures/fb.jpg" class="i1">
+            <img src="/pictures/zalo.jpg" class="i1">
+            <img src="/pictures/youtube.jpg" class="i1">
+            <img src="/pictures/gg_play.jpg" class="i2">
+            <img src="/pictures/app_store.jpg" class="i2">
+        </div>
+        <div style="gap: 40px; align-items: center; color: white; font-size: 15px;text-align:center;justify-content: center;">
+            <p>Cơ quan chủ quản: BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH</p>
+            <p>Bản quyền thuộc Trung tâm Chiếu phim Quốc gia.</p>
+            <p>Giấy phép số: 224/GP- TTĐT ngày 31/8/2010 - Chịu trách nhiệm: Vũ Đức Tùng – Giám đốc.</p>
+            <p>Địa chỉ: 87 Láng Hạ, Quận Ba Đình, Tp. Hà Nội - Điện thoại: 024.35141791</p>
+            <br>
+            <br>
+        </div>
+    </footer>
+    <div id="Dangky">
+        <div style="width: 600px; height: 600px;background-color: black;border: 1px solid white;color:white;margin-top: 40px;margin-left: 30%;border-radius: 20px;">
+            <button onclick="DongDangky()" type="button" class="close closs-css" aria-label="Close" style="background-color: black;font-size: 32px; margin-left: 92%;border: none;margin-top: 10px;">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h2 style="width: 100px;margin-left: 30px;font-weight: bolder;margin-top: -32px;">Đăng ký</h2>
+            <div class="form1">
+                <div>
+                    <label for="last_name">Họ</label>
+                    <input id="last_name" placeholder="Họ" type="text">
+                </div>
+                <div>
+                    <label for="first_name">Tên</label>
+                    <input id="first_name" placeholder="Tên" type="text">
+                </div>
+            </div>
+            <br>
+            <label for="user_name" class="User">Tên tài khoản</label>
+            <input id="user_name" class="User_input" type="text" placeholder="Tên tài khoản">
+            <br>
+            <br>
+            <div class="form1">
+                <div>
+                    <label for="pn">Số điện thoại</label>
+                    <input id="pn" type="tel" placeholder="Số điện thoại" pattern="[0-9]{10}">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+            </div>
+            <br>
+            <div class="form1">
+                <div>
+                    <label for="password">Mật khẩu</label>
+                    <input id="password" type="password" placeholder="Mật khẩu">
+                </div>
+                <div>
+                    <label for="confirm_password">Xác nhận Mật khẩu</label>
+                    <input id="confirm_password" type="password" placeholder="Xác nhận mật khẩu">
+                </div>
+            </div>
+            <br>
+            <br>
+            <button style="background-color: red;color: white;width: 550px;border-radius: 25px;height: 40px;margin-left: 25px;">Đăng ký</button>
+            <br>
+            <br>
+            <div style="display: flex;justify-content: center;">
+                <p>Bạn đã có tài khoản?</p>
+                <p style="color: red;text-decoration: underline;" onclick="Dangnhap()">Đăng nhập</p>
+            </div>
+        </div>
+    </div>
+    <div id="Dangnhap">
+        <div style="width: 440px;height: 370px;background-color: black;border: 1px solid white;color: white;margin-top: 150px;margin-left: 36%;border-radius: 20px">
+            <button onclick="DongDangnhap()" type="button" class="close closs-css" aria-label="Close" style="background-color: black;font-size: 32px; margin-left: 90%;border: none;margin-top: 10px;">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h2 style="width: 120px;margin-left: 25px;font-weight: bolder;margin-top: -32px;">Đăng nhập</h2>
+            <br>
+            <label for="email1" class="User">Email</label>
+            <input id="email1" style="border-radius: 10px;height: 40px;width: 385px;margin-left: 25px;" type="email" placeholder="Email">
+            <br>
+            <br>
+            <label for="password1" class="User">Mật khẩu</label>
+            <input id="password1" style="border-radius: 10px;height: 40px;width: 385px;margin-left: 25px;" type="password" placeholder="Mật khẩu">
+            <br>
+            <br>
+            <br>
+            <button style="background-color: red;color: white;border-radius: 25px;height: 40px;width: 395px;margin-left: 25px;">Đăng nhập</button>
+            <br>
+            <br>
+            <div style="display: flex;justify-content: center;">
+                <p>Bạn chưa có tài khoản?</p>
+                <p style="color: red;text-decoration: underline;" onclick="Dangky()">Đăng ký</p>
+            </div>
+        </div>
+    </div>
+    <script src="project6.js"></script>
+</body>
+</html>
