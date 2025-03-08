@@ -11,7 +11,7 @@
     <header style="background-color: rgba(30, 30, 30, 1);">
         <nav id="narbar" class="contain" style="position: fixed;z-index: 90;">
             <div class="div-contain" >
-                <img src="/pictures/NCC_icon.png" style="width: 100px;height: 130px;color: brown;">
+                <img src="pictures/NCC_icon.png" style="width: 100px;height: 130px;color: brown;">
                 <p>NATIONAL CINEMA CENTER</p>
                 <a href="project6.html"><p style="color: red">Trang chủ</p></a>
                 <p>Lịch chiếu</p>
@@ -19,19 +19,24 @@
                 <p>Khuyến mãi</p>
                 <p>Liên hoan phim, Tuần phim</p>
                 <p>Giới thiệu</p>
-                <button onclick="Dangky()">Đăng ký</button>
-                <button onclick="Dangnhap()">Đăng nhập</button>
+                <p id="Quantri" style="display: none;">Quản trị</p>
+                <div id="User_name">
+                    <div id="User">
+                        <button onclick="Dangky()">Đăng ký</button>
+                        <button onclick="Dangnhap()">Đăng nhập</button>
+                    </div>
+                </div>
             </div>
         </nav>
         <br>
         <div class="slider">
             <div class="slides">
-                <a href="Wicked.html"><img class="slide" src="/pictures/p3.jpg"></a>
-                <a href="CA_BNW.html"><img class="slide" src="/pictures/captain-america-brave-new-world-poster-2.jpeg"></a>
-                <a href="SFH.html"><img class="slide" src="/pictures/STFH.jpg"></a>
-                <a href="THENUNII.html"><img class="slide" src="/pictures/thenun2.jpg"></a>
+                <a href="Wicked.html"><img class="slide" src="pictures/p3.jpg"></a>
+                <a href="CA_BNW.html"><img class="slide" src="pictures/captain-america-brave-new-world-poster-2.jpeg"></a>
+                <a href="SFH.html"><img class="slide" src="pictures/STFH.jpg"></a>
+                <a href="THENUNII.html"><img class="slide" src="pictures/thenun2.jpg"></a>
                 <a href="AOT.html"><video class="slide" autoplay muted>
-                    <source src="/videos/ATTACK ON TITAN_ THE LAST ATTACK – Trailer (HD).mp4">
+                    <source src="video/ATTACK ON TITAN_ THE LAST ATTACK – Trailer (HD).mp4">
                 </video></a>
             </div>
             <button class="left" onclick="prevSlide()">&#10094</button>
@@ -98,11 +103,11 @@
             <p>Liên hệ</p>
         </div>
         <div style="display: flex;gap:20px;justify-content: center;">
-            <img src="/pictures/fb.jpg" class="i1">
-            <img src="/pictures/zalo.jpg" class="i1">
-            <img src="/pictures/youtube.jpg" class="i1">
-            <img src="/pictures/gg_play.jpg" class="i2">
-            <img src="/pictures/app_store.jpg" class="i2">
+            <img src="pictures/fb.jpg" class="i1">
+            <img src="pictures/zalo.jpg" class="i1">
+            <img src="pictures/youtube.jpg" class="i1">
+            <img src="pictures/gg_play.jpg" class="i2">
+            <img src="pictures/app_store.jpg" class="i2">
         </div>
         <div style="gap: 40px; align-items: center; color: white; font-size: 15px;text-align:center;justify-content: center;">
             <p>Cơ quan chủ quản: BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH</p>
@@ -140,15 +145,15 @@
                     <input id="pn" type="tel" placeholder="Số điện thoại" pattern="[0-9]{10}">
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="Email">
+                    <label for="email2">Email</label>
+                    <input id="email2" type="email" placeholder="Email">
                 </div>
             </div>
             <br>
             <div class="form1">
                 <div>
-                    <label for="password">Mật khẩu</label>
-                    <input id="password" type="password" placeholder="Mật khẩu">
+                    <label for="password2">Mật khẩu</label>
+                    <input id="password2" type="password" placeholder="Mật khẩu">
                 </div>
                 <div>
                     <label for="confirm_password">Xác nhận Mật khẩu</label>
@@ -157,7 +162,7 @@
             </div>
             <br>
             <br>
-            <button style="background-color: red;color: white;width: 550px;border-radius: 25px;height: 40px;margin-left: 25px;">Đăng ký</button>
+            <button onclick="CreateLogin()" style="background-color: red;color: white;width: 550px;border-radius: 25px;height: 40px;margin-left: 25px;">Đăng ký</button>
             <br>
             <br>
             <div style="display: flex;justify-content: center;">
@@ -182,7 +187,7 @@
             <br>
             <br>
             <br>
-            <button style="background-color: red;color: white;border-radius: 25px;height: 40px;width: 395px;margin-left: 25px;">Đăng nhập</button>
+            <button onclick="Login()" style="background-color: red;color: white;border-radius: 25px;height: 40px;width: 395px;margin-left: 25px;">Đăng nhập</button>
             <br>
             <br>
             <div style="display: flex;justify-content: center;">
