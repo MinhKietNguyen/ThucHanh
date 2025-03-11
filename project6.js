@@ -65,7 +65,7 @@ function DongDangnhap(){
 }
 var email = "kiet@gmail.com"
 var password = "123"
-var account_email = [email];
+var account_email = [emAail];
 var account_pass = [password];
 let drt = document.getElementById("User");
 
