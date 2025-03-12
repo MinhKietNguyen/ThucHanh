@@ -188,8 +188,6 @@ function CreateLogin(){
     else{
         OpenCauhoiDangky();
     }
-    
-    OpenCauhoiDangky();
 }
 function OpenCauhoiDangky(){
     document.getElementById("CauhoiDangky").classList.add("chdk")
