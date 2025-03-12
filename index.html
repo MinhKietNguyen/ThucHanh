@@ -119,7 +119,7 @@
         </div>
     </footer>
     <div id="Dangky">
-        <div style="width: 600px; height: 600px;background-color: black;border: 1px solid white;color:white;margin-top: 40px;margin-left: 30%;border-radius: 20px;">
+        <div style="width: 600px; height: 630px;background-color: black;border: 1px solid white;color:white;margin-top: 40px;margin-left: 30%;border-radius: 20px;">
             <button onclick="DongDangky()" type="button" class="close closs-css" aria-label="Close" style="background-color: black;font-size: 32px; margin-left: 92%;border: none;margin-top: 10px;">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -134,6 +134,21 @@
                     <input id="first_name" placeholder="Tên" type="text">
                 </div>
             </div>
+            <br>
+            <div class="form1">
+                <div>
+                    <label for="Date">Ngày/tháng/năm sinh</label>
+                    <input id="Date" type="date">
+                </div>
+                <div>
+                    <label for="cccd">CCCD</label>
+                    <input id="cccd" type="text" placeholder="CCCD" pattern="[0-9]{12}">
+                </div>
+            </div>
+            <br>
+            <label for="Address" class="User">Địa chỉ thường chú</label>
+            <input id="Address" class="User_input" type="text" placeholder="Địa chỉ">
+            <br>
             <br>
             <label for="user_name" class="User">Tên tài khoản</label>
             <input id="user_name" class="User_input" type="text" placeholder="Tên tài khoản">
@@ -161,13 +176,267 @@
                 </div>
             </div>
             <br>
-            <br>
             <button onclick="CreateLogin()" style="background-color: red;color: white;width: 550px;border-radius: 25px;height: 40px;margin-left: 25px;">Đăng ký</button>
-            <br>
             <br>
             <div style="display: flex;justify-content: center;">
                 <p>Bạn đã có tài khoản?</p>
                 <p style="color: red;text-decoration: underline;" onclick="Dangnhap()">Đăng nhập</p>
+            </div>
+        </div>
+    </div>
+    <div id="CauhoiDangky">
+        <div style="width: 600px; height: 630px;background-color: black;border: 1px solid white;margin-top: 40px;margin-left: 30%;border-radius: 20px;">
+            <button onclick="CloseCauHoiDangky()" type="button" class="close closs-css" aria-label="Close" style="background-color: black;font-size: 32px; margin-left: 92%;border: none;margin-top: 10px;">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h1 style="color: white; margin-left: 35px;margin-top: -3%;padding-bottom: 10px;">Các câu hỏi khảo sát</h1>
+            <div style="color:black; overflow:scroll;background-color: white;width: 540px;height: 500px;margin-left: 31px;border-radius: 8px;">
+                <div id="MC1" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau1">1. Titanic được phát hành vào năm 1997?</label>
+                    <br>
+                    <br>
+                    <div id="answer1"></div>
+                </div>
+                <div id="MC2" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau2">2. Leonardo DiCaprio chưa từng nhận giải Oscar?</label>
+                    <br>
+                    <br>
+                    <div id="answer2"></div>
+                </div>
+                <div id="MC3" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau3">3. Marvel Studios là hãng phim sản xuất loạt phim Harry Potter?</label>
+                    <br>
+                    <br>
+                    <div id="answer3"></div>
+                </div>
+                <div id="MC4" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau4">4. Avatar (2009) do James Cameron đạo diễn.?</label>
+                    <br>
+                    <br>
+                    <div id="answer4"></div>
+                </div>
+                <div id="MC5" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau5">5. Phim hoạt hình "Spirited Away" (Vùng đất linh hồn) là của hãng Studio Ghibli?</label>
+                    <br>
+                    <br>
+                    <div id="answer5"></div>
+                </div>
+                <div id="MC6" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau6">6. The Godfather (Bố già) là bộ phim đoạt giải Oscar cho "Phim hay nhất"?</label>
+                    <br>
+                    <br>
+                    <div id="answer6"></div>
+                </div>
+                <div id="MC7" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau7">7. Darth Vader là nhân vật phản diện trong loạt phim Star Trek?</label>
+                    <br>
+                    <br>
+                    <div id="answer7"></div>
+                </div>
+                <div id="MC8" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau8">8. Interstellar là một bộ phim thuộc thể loại khoa học viễn tưởng?</label>
+                    <br>
+                    <br>
+                    <div id="answer8"></div>
+                </div>
+                <div id="MC9" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau9">9. "Joker" (2019) là bộ phim thuộc vũ trụ điện ảnh Marvel?</label>
+                    <br>
+                    <br>
+                    <div id="answer9"></div>
+                </div>
+                <div id="MC10" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau10">10. The Shawshank Redemption (Nhà tù Shawshank) dựa trên một truyện ngắn của Stephen King.?</label>
+                    <br>
+                    <br>
+                    <div id="answer10"></div>
+                </div>
+                <div id="MC11" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau11">11. Ai là đạo diễn của bộ phim "Inception"?</label>
+                    <br>
+                    <br>
+                    <div id="answer11"></div>
+                </div>
+                <div id="MC12" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau12">12. Phim nào dưới đây giành giải Oscar cho "Phim hay nhất" năm 2020?</label>
+                    <br>
+                    <br>
+                    <div id="answer12"></div>
+                </div>
+                <div id="MC13" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau13">13. Nhân vật nào là phản diện chính trong "The Dark Knight" (2008)?</label>
+                    <br>
+                    <br>
+                    <div id="answer13"></div>
+                </div>
+                <div id="MC14" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau14">14. Bộ phim nào có câu thoại nổi tiếng: "I’ll be back"?</label>
+                    <br>
+                    <br>
+                    <div id="answer14"></div>
+                </div>
+                <div id="MC15" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau15">15. Bộ phim nào có doanh thu cao nhất mọi thời đại (tính đến 2024)?</label>
+                    <br>
+                    <br>
+                    <div id="answer15"></div>
+                </div>
+                <div id="MC16" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau16">16. Nhân vật chính trong loạt phim "John Wick" do ai thủ vai?</label>
+                    <br>
+                    <br>
+                    <div id="answer16"></div>
+                </div>
+                <div id="MC17" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau17">17. Bộ phim hoạt hình nào đoạt giải Oscar "Phim hoạt hình hay nhất" năm 2022?</label>
+                    <br>
+                    <br>
+                    <div id="answer17"></div>
+                </div>
+                <div id="MC18" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau18">18. Bộ phim nào không phải do Studio Ghibli sản xuất?</label>
+                    <br>
+                    <br>
+                    <div id="answer18"></div>
+                </div>
+                <div id="MC19" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau19">19. Nhân vật nào dưới đây không thuộc vũ trụ điện ảnh Marvel (MCU)?</label>
+                    <br>
+                    <br>
+                    <div id="answer19"></div>
+                </div>
+                <div id="MC20" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau20">20. Phim kinh dị nào được dựa trên câu chuyện có thật?</label>
+                    <br>
+                    <br>
+                    <div id="answer20"></div>
+                </div>
+                <div id="MC21" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau21">21. Những bộ phim nào do Christopher Nolan đạo diễn?</label>
+                    <br>
+                    <br>
+                    <div id="answer21"></div>
+                </div>
+                <div id="MC22" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau22">22. Những bộ phim nào thuộc vũ trụ điện ảnh Marvel (MCU)?</label>
+                    <br>
+                    <br>
+                    <div id="answer22"></div>
+                </div>
+                <div id="MC23" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau23">23. Những nhân vật nào thuộc loạt phim "Harry Potter"?</label>
+                    <br>
+                    <br>
+                    <div id="answer23"></div>
+                </div>
+                <div id="MC24" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau24">24. Những bộ phim nào là phim hoạt hình của Disney?</label>
+                    <br>
+                    <br>
+                    <div id="answer24"></div>
+                </div>
+                <div id="MC25" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau25">25. Những diễn viên nào từng đóng vai Spider-Man?</label>
+                    <br>
+                    <br>
+                    <div id="answer25"></div>
+                </div>
+                <div id="MC26" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau26">26. Những bộ phim nào thuộc thể loại khoa học viễn tưởng?</label>
+                    <br>
+                    <br>
+                    <div id="answer26"></div>
+                </div>
+                <div id="MC27" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau27">27. Những bộ phim nào có nhân vật do Johnny Depp thủ vai?</label>
+                    <br>
+                    <br>
+                    <div id="answer27"></div>
+                </div>
+                <div id="MC28" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau28">28. Những phim nào là phim kinh dị?</label>
+                    <br>
+                    <br>
+                    <div id="answer28"></div>
+                </div>
+                <div id="MC29" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau29">29. Những bộ phim nào giành giải Oscar "Phim hay nhất"?</label>
+                    <br>
+                    <br>
+                    <div id="answer29"></div>
+                </div>
+                <div id="MC30" style="margin-left: 6%;margin-top: 5%;font-size: 20px;    padding-bottom: 10px;">
+                    <label for="cau30">30. Những bộ phim nào thuộc thương hiệu Star Wars?</label>
+                    <br>
+                    <br>
+                    <div id="answer30"></div>
+                </div>
+                <div id="MC31" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau31">31. Phân tích ý nghĩa của bộ phim "Inception".</label>
+                    <br><br>
+                    <textarea id="answer31" rows="4" cols="50"></textarea>
+                </div>
+                
+                <div id="MC32" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau32">32. So sánh Batman của Christopher Nolan và Batman của Matt Reeves.</label>
+                    <br><br>
+                    <textarea id="answer32" rows="4" cols="50"></textarea>
+                </div>
+                
+                <div id="MC33" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau33">33. Vì sao loạt phim Marvel lại thành công trên toàn cầu?</label>
+                    <br><br>
+                    <textarea id="answer33" rows="4" cols="50"></textarea>
+                </div>
+                
+                <div id="MC34" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau34">34. Đánh giá phim "Parasite" và thông điệp xã hội của nó.</label>
+                    <br><br>
+                    <textarea id="answer34" rows="4" cols="50"></textarea>
+                </div>
+                
+                <div id="MC35" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau35">35. Những yếu tố nào tạo nên một bộ phim kinh dị hấp dẫn?</label>
+                    <br><br>
+                    <textarea id="answer35" rows="4" cols="50"></textarea>
+                </div>
+                
+                <div id="MC36" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau36">36. Tại sao "The Godfather" được coi là một trong những phim hay nhất mọi thời đại?</label>
+                    <br><br>
+                    <textarea id="answer36" rows="4" cols="50"></textarea>
+                </div>
+                
+                <div id="MC37" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau37">37. Nêu sự khác nhau giữa phim hoạt hình Disney và Pixar.</label>
+                    <br><br>
+                    <textarea id="answer37" rows="4" cols="50"></textarea>
+                </div>
+                
+                <div id="MC38" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau38">38. Tầm quan trọng của nhạc phim trong điện ảnh.</label>
+                    <br><br>
+                    <textarea id="answer38" rows="4" cols="50"></textarea>
+                </div>
+                
+                <div id="MC39" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau39">39. Những đạo diễn có ảnh hưởng lớn nhất đến lịch sử điện ảnh là ai?</label>
+                    <br><br>
+                    <textarea id="answer39" rows="4" cols="50"></textarea>
+                </div>
+                
+                <div id="MC40" style="margin-left: 6%; margin-top: 5%; font-size: 20px; padding-bottom: 10px;">
+                    <label for="cau40">40. Phân tích nhân vật Joker qua các phiên bản phim khác nhau.</label>
+                    <br><br>
+                    <textarea id="answer40" rows="4" cols="50"></textarea>
+                </div>
+                <button onclick="kiemTraDapAn()" style="background-color: red;border: none;color: white !important;font-size: 20px;margin-left: 60%;padding: 10px 15px;border-radius: 10px;">Nộp khảo soát</button>
+            </div>
+            <div id="CongKetQua">
+                <button onclick="CloseKetQua()" type="button" class="close closs-css" aria-label="Close" style="background-color: black;font-size: 32px; margin-left: 93%;border: none;margin-top: 2px;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div id="ketQua"></div>
             </div>
         </div>
     </div>
