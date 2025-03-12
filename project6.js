@@ -170,7 +170,7 @@ function CreateLogin(){
     var P_number = document.getElementById("pn").value;
     var confirm_password = document.getElementById("confirm_password").value;
     
-    /*var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     var vietnamPhoneRegex = /^(?:\+84|0)(3|5|7|8|9)\d{8}$/;
     var cccdRegex = /^\d{9}$|^\d{12}$/;
     var addressRegex = /^[0-9a-zA-ZÀ-ỹ\s,./\-()]+$/;
@@ -188,7 +188,7 @@ function CreateLogin(){
     else{
         OpenCauhoiDangky();
     }
-    */
+    
     OpenCauhoiDangky();
 }
 function OpenCauhoiDangky(){
