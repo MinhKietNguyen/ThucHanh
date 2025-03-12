@@ -186,6 +186,7 @@ function CreateLogin(){
         failLoginDangky();
     }
     else{
+        
         OpenCauhoiDangky();
     }
 }
